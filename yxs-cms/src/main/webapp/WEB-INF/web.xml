@@ -7,7 +7,11 @@
          metadata-complete="true">
   <context-param>
     <param-name>contextConfigLocation</param-name>
-    <param-value>classpath:app-context.xml</param-value>
+    <param-value>classpath:app-context.xml,classpath:app-data.xml</param-value>
+  </context-param>
+  <context-param>
+    <param-name>webAppRootKey</param-name>
+    <param-value>rootPath</param-value>
   </context-param>
 
   <filter>
@@ -31,7 +35,9 @@
     <filter-name>HiddenHttpMethodFilter</filter-name>
     <servlet-name>ycms</servlet-name>
   </filter-mapping>
-
+  <listener>
+    <listener-class>org.springframework.web.util.WebAppRootListener</listener-class>
+  </listener>
   <listener>
     <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
   </listener>

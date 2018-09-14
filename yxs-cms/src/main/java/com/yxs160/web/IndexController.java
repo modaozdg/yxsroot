@@ -19,7 +19,7 @@ public class IndexController {
      * 根路径
      * @return
      */
-    @RequestMapping(value = "/")
+    @RequestMapping(value = {"/","/index"})
     public String index(){
 
         return "index";
@@ -31,5 +31,15 @@ public class IndexController {
     public String page404(){
 
         return "404";
+    }
+
+    /**
+     * 管理入口
+     * @return
+     */
+    @RequestMapping(value = "/admin")
+    public String admin(){
+
+        return "admin/login";
     }
 }
