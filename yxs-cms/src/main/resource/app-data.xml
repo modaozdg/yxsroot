@@ -13,7 +13,7 @@ http://www.springframework.org/schema/aop http://www.springframework.org/schema/
     <bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource" init-method="init" destroy-method="close">
         <property name="driverClassName" value="${driverClassName}"/>
         <property name="url" value="${url}"/>
-        <property name="username" value="${user}"/>
+        <property name="username" value="${username}"/>
         <property name="password" value="${password}"/>
 
         <property name="filters" value="${filters}"/>
