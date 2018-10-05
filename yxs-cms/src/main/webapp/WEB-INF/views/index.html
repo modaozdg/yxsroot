@@ -1,10 +1,225 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-cmn-Hans">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <meta charset="utf-8" />
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <title>大竹县云祥盛家庭农场</title>
+    <style type="text/css">
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .header {
+            width: 100%;
+            height: 72px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 2;
+        }
+
+        .header .nav ul li {
+            display: inline-block;
+            margin: 0 20px;
+        }
+
+        .header .nav ul li a {
+            font-family: "微软雅黑";
+            font-size: 15px;
+            text-decoration: none;
+            color: #000000;
+
+        }
+
+        .header .nav ul li a:hover {
+            color: #40c32f;
+        }
+    </style>
 </head>
 <body>
-我是首页
+<header class="header" style="">
+    <div class="" style="width: 100%; padding: 0 40px;display: table;height: 100%;">
+        <div class="" style="display: table-cell;vertical-align:middle">
+            <a href="#">
+                <img src="img/logo.png" width="156" alt="">
+            </a>
+        </div>
+        <nav class="nav" style="display:table-cell;text-align: right;vertical-align: middle;">
+            <ul>
+                <li><a href="#">首页</a></li>
+                <li><a href="#">种植技术</a></li>
+                <li><a href="#">关于我们</a></li>
+                <li><a href="#">产品中心</a></li>
+                <li><a href="#">新闻资讯</a></li>
+                <li><a href="#">联系我们</a></li>
+            </ul>
+        </nav>
+    </div>
+
+</header>
+<div class="content" style="position: absolute;top: 0;left: 0;right: 0;overflow: hidden;">
+    <div class="mian1" style="position: relative;height: 100vh; background-image: url(/static/front/img/main1.jpg);background-repeat: no-repeat;background-size: cover;background-attachment: scroll;background-position: center bottom;text-align: center;">
+        <div class="" style="display: table;vertical-align: middle;width: 100%;height: 100%;">
+            <div style="display: table-cell;vertical-align: middle;">
+                <img src="img/logo-mobile.png" data-th-src="@{/static/front/img/logo-mobile.png}" style="margin-bottom: 30px;">
+                <h3 style="font-size: 35px;font-weight: normal;">现代化农业</h3>
+                <h1 style="font-size: 50px;margin-bottom: 20px;">大竹县云祥盛家庭农场</h1>
+                <p style="color: #696969;font-size: 15px;margin-bottom: 46px;">不是所有水果都是原生态、农家肥、绿色食品。</p>
+                <img style="position: absolute;bottom: 68px;margin-left: -64px;" src="img/jiantou-bottom.png" data-th-src="@{/static/front/img/jiantou-bottom.png}">
+            </div>
+        </div>
+    </div>
+    <div class="main2" style="width: 100%;height: 100vh;">
+        <div  style="width: 100%;height: 100%;">
+            <div  style="width: 50%; float: left;height: 100%;display: table;">
+                <div style="display: table-cell;vertical-align: middle;height: 100%;padding: 0px 150px;">
+                    <h1 style="font-weight: normal;">现代化的种植技术</h1>
+                    <p style="margin: 30px 0; font-size: 15px;font-weight: normal;line-height:30px;">我们种植与900米高山上，适合猕猴桃生长的土壤，平均气温比城市低5摄氏度，空气清晰，远离城市污染和生活垃圾，机械化开荒，建设喷灌系统预防干旱，真正的原生态种植，绿色水果。</p>
+                    <a href="#" style="padding: 12px 92px; width: auto;display: inline-block; border: 1px solid #c7c7c7;color: #4e4e4e;text-decoration: none;font-size: 14px;font-weight: normal; ">查看更多
+                        →</a>
+                    <div  style="overflow: hidden;margin-top: 50px;">
+                        <div  style="width: 33.333%;float: left;text-align: center;">
+                            <img src="img/main2-yao.png" data-th-src="@{/static/front/img/main2-yao.png}">
+                            <span style="display: block;font-size: 15px;color: #68b8fa;margin-top: 10px;">无农药残留</span>
+                        </div>
+                        <div style="width: 33.333%;float: left;text-align: center;">
+                            <img src="img/main2-map.png" data-th-src="@{/static/front/img/main2-map.png}" alt="" >
+                            <span style="display: block;font-size: 15px;color: #f37452;margin-top: 10px;">完全可追溯</span>
+                        </div>
+                        <div class="content" style="width: 33.333%;float: left;text-align: center;">
+                            <img src="img/main2-youji.png" data-th-src="@{/static/front/img/main2-youji.png}">
+                            <span style="display: block;font-size: 15px;color: #68d870;margin-top: 10px;">比有机更好</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div  style="width: 50%;float: left;height: 100%;">
+                <img src="img/main2.jpg" data-th-src="@{/static/front/img/main2.jpg}" style="width: 100%;height: auto;">
+            </div>
+        </div>
+    </div>
+    <div class="main3" style="width: 100%;position: relative;height: 100vh; background-image: url(/static/front/img/main3.jpg);background-repeat: no-repeat;background-size: cover;background-attachment: scroll;background-position: 0 0%;">
+        <div style="overflow: hidden;height: 100%;position: relative;">
+            <div class="" style="width: 50%; float: left;height: 100%;position: relative;">
+
+            </div>
+            <div style="width: 50%;float: left;display: table;position: relative;height: 100%;">
+                <div class="" style="display: table-cell;vertical-align: middle;">
+                    <div style="background-color: #ffffff;width: 75%;margin: auto;padding: 80px 60px;">
+                        <h1 style="padding-bottom: 20px;font-weight:normal">关于有机农蔬菜</h1>
+                        <p style="line-height: 30px;font-size: 15px;color: #606060;">我们的流线式网页布局设计方案和可视化图文内容编辑模式让网站制作和维护成为一件轻松惬意的事。起飞页的核心竞争力来自于它集流线式布局方案与可视化内容编辑于一体，支持打字传图、自由拖拽，不需要专业编写代码，您可以随心所欲创建区块、添加组件…</p>
+                        <div style="overflow: hidden;margin-top: 50px;">
+                            <div class="" style="float: left;width: 50%;text-align: center;">
+                                <img src="img/main3-car.png" data-th-src="@{/static/front/img/main3-car.png}">
+                                <p style="font-size: 15px;font-weight: normal;color: #6ab8f9;">无农药残留</p>
+                            </div>
+                            <div id="a" style="float: left;width: 50%;text-align: center;">
+                                <img src="img/main3-shui.png" data-th-src="@{/static/front/img/main3-shui.png}" />
+                                <p style="font-size: 15px;font-weight: normal;color: #f4866a;">完全可追溯</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main4" style="width: 100%;height: 100vh;text-align: center;display: table;">
+        <div class="" style="display: table-cell;vertical-align: middle;">
+
+
+            <h1 style="text-align: center;font-size: 32px;font-weight: normal;font-style: normal;padding: 20px 0;">我们的产品</h1>
+            <p style="text-align:center;font-size: 16px;color: #373a41;">食品安全共享协作服务平台一流的市场化服务</p>
+            <div  style="width:86% ;overflow: hidden;margin: auto;padding: 40px 0;">
+                <div style="width: 25%;float: left;text-align: center;">
+                    <div  style="margin: 0 10px;background-color: #f8f8f8;padding-bottom: 40px;">
+                        <img width="100%" src="img/main4-cai1.png" data-th-src="@{/static/front/img/main4-cai1.png}">
+                        <h3 style="padding: 10px 0;font-size: 22px;font-weight: normal;">红心猕猴桃</h3>
+                        <p style="color: rgb(51, 51, 51);font-size: 13px;line-height: 2em;padding: 0 20px;">富含维生素B1、维生素E，还有大量膳食纤维素和微量元素。</p>
+                    </div>
+                </div>
+                <div style="width: 25%;float: left;text-align: center;">
+                    <div  style="margin: 0 10px;background-color: #f8f8f8;padding-bottom: 40px;">
+                        <img width="100%" src="img/main4-cai2.png" data-th-src="@{/static/front/img/main4-cai2.png}">
+                        <h3 style="padding: 10px 0;font-size: 22px;font-weight: normal;">黄心猕猴桃</h3>
+                        <p style="color: rgb(51, 51, 51);font-size: 13px;line-height: 2em;padding: 0 20px;">富含维生素B1、维生素E，还有大量膳食纤维素和微量元素。</p>
+                    </div>
+                </div>
+                <div style="width: 25%;float: left;text-align: center;">
+                    <div class="" style="margin: 0 10px;background-color: #f8f8f8;padding-bottom: 40px;">
+                        <img width="100%" src="img/main4-cai3.png" data-th-src="@{/static/front/img/main4-cai3.png}">
+                        <h3 style="padding: 10px 0;font-size: 22px;font-weight: normal;">农产品</h3>
+                        <p style="color: rgb(51, 51, 51);font-size: 13px;line-height: 2em;padding: 0 20px;">富含维生素B1、维生素E，还有大量膳食纤维素和微量元素。</p>
+                    </div>
+                </div>
+                <div style="width: 25%;float: left;text-align: center;">
+                    <div  style="margin: 0 10px;background-color: #f8f8f8;padding-bottom: 40px;">
+                        <img width="100%" src="img/main4-cai1.png" data-th-src="@{/static/front/img/main4-cai1.png}">
+                        <h3 style="padding: 10px 0;font-size: 22px;font-weight: normal;">家畜</h3>
+                        <p style="color: rgb(51, 51, 51);font-size: 13px;line-height: 2em;padding: 0 20px;">富含维生素B1、维生素E，还有大量膳食纤维素和微量元素。</p>
+                    </div>
+                </div>
+            </div>
+            <a style="font-size:14px;display: inline-block;margin: auto; border: 1px solid #cccccc;padding: 13px 50px;">查看我们的产品</a>
+        </div>
+    </div>
+    <div class="main5" style="width:100%;height: 100vh;background-image: url(/static/front/img/main5.jpg);background-repeat: no-repeat;background-size: cover;background-attachment: scroll;background-position: 0 0%;">
+        <div style="overflow: hidden;height: 100%;position: relative;">
+            <div class="" style="width: 50%; float: left;height: 100%;display: table;position: relative;">
+                <div class="" style="display: table-cell;vertical-align: middle;">
+                    <div style="background-color: #40c32f;width: 72%;margin: auto;padding: 100px 60px;">
+                        <h1 style="padding-bottom: 20px;font-weight:normal;color: #fff;">关于我们</h1>
+                        <p style="line-height: 30px;font-size: 15px;color: #fff;">我们的流线式网页布局设计方案和可视化图文内容编辑模式让网站制作和维护成为一件轻松惬意的事。起飞页的核心竞争力来自于它集流线式布局方案与可视化内容编辑于一体，支持打字传图、自由拖拽，不需要专业编写代码，您可以随心所欲创建区块、添加组件…</p>
+                        <div style="overflow: hidden;margin-top: 50px;">
+                            <a href="#" style="padding: 12px 92px; width: auto;display: inline-block; border: 1px solid #fff;color: #fff;text-decoration: none;font-size: 14px;font-weight: normal; ">查看更多
+                                →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="width: 50%;float: left;">
+
+            </div>
+        </div>
+    </div>
+    <div class="main6" style="width: 100%;height: 100vh;text-align: center;display: table;">
+        <div class="" style="display: table-cell;vertical-align: middle;">
+            <h1 style="text-align: center;font-size: 32px;font-weight: normal;font-style: normal;padding: 20px 0;">新闻资讯</h1>
+            <p style="text-align:center;font-size: 16px;color: #373a41;">食品安全共享协作服务平台一流的市场化服务</p>
+            <div  style="width:86% ;overflow: hidden;margin: auto;padding: 40px 0;">
+                <div style="width: 33.33333%;float: left;text-align: center;">
+                    <div  style="margin: 0 15px;padding-bottom: 40px;border: 1px solid #cccccc59;padding: 20px;">
+                        <img width="100%" src="img/main6-licai.jpg" data-th-src="@{/static/front/img/main6-licai.jpg}">
+                        <h3 style="padding: 10px 0;font-size: 22px;font-weight: normal;">红心猕猴桃</h3>
+                        <p style="color: rgb(51, 51, 51);font-size: 13px;line-height: 2em;padding: 0 20px;">富含维生素B1、维生素E，还有大量膳食纤维素和微量元素。</p>
+                    </div>
+                </div>
+                <div style="width: 33.33333%;float: left;text-align: center;">
+                    <div class="" style="margin: 0 15px;padding-bottom: 40px;border: 1px solid #cccccc59;padding: 20px;">
+                        <img width="100%" src="img/main6-tu2.jpg" data-th-src="@{/static/front/img/main6-tu2.jpg}">
+                        <h3 style="padding: 10px 0;font-size: 22px;font-weight: normal;">农产品</h3>
+                        <p style="color: rgb(51, 51, 51);font-size: 13px;line-height: 2em;padding: 0 20px;">富含维生素B1、维生素E，还有大量膳食纤维素和微量元素。</p>
+                    </div>
+                </div>
+                <div style="width: 33.33333%;float: left;text-align: center;">
+                    <div  style="margin: 0 15px;padding-bottom: 40px;border: 1px solid #cccccc59;padding: 20px;">
+                        <img width="100%" src="img/main6-tu3.jpg" data-th-src="@{/static/front/img/main6-tu3.jpg}">
+                        <h3 style="padding: 10px 0;font-size: 22px;font-weight: normal;">家畜</h3>
+                        <p style="color: rgb(51, 51, 51);font-size: 13px;line-height: 2em;padding: 0 20px;">富含维生素B1、维生素E，还有大量膳食纤维素和微量元素。</p>
+                    </div>
+                </div>
+            </div>
+            <a style="font-size:14px;display: inline-block;margin: auto; border: 1px solid #cccccc59;padding: 13px 50px;">查看我们的产品</a>
+        </div>
+    </div>
+    <div class="main7" style="width: 100%;height: 100vh;display: table;position: relative;background-image: url(/static/front/img/main7.png);background-repeat: no-repeat;background-size: 100%;background-attachment: scroll;background-position:bottom;">
+
+    </div>
+</div>
 </body>
 </html>
