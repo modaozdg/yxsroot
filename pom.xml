@@ -11,10 +11,8 @@
   <modules>
     <module>yxs-cms</module>
     <module>yxs-common</module>
-      <module>yxs-admin</module>
-      <module>yxs-admin</module>
     <module>yxs-admin</module>
-    <module>yxs-admin</module>
+    <module>yxs-model</module>
   </modules>
 
   <name>yxs-root</name>
