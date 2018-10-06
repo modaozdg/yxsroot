@@ -17,7 +17,7 @@ public class AdminController {
     @GetMapping(value = "/index")
     public String index(){
 
-        return "admin/index";
+        return "backend/index";
     }
 
     /**
@@ -27,6 +27,6 @@ public class AdminController {
     @GetMapping(value = "/console")
     public String console(){
 
-        return "admin/home/console";
+        return "backend/home/console";
     }
 }

@@ -14,11 +14,11 @@ public class ForumController {
     @GetMapping(value = "/index")
     public String index(){
 
-        return "admin/forum/list";
+        return "backend/forum/list";
     }
 
     @GetMapping(value = "/replyIndex")
     public String replyIndex(){
-        return "admin/forum/replys";
+        return "backend/forum/replys";
     }
 }

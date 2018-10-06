@@ -40,6 +40,6 @@ public class IndexController {
     @RequestMapping(value = "/admin")
     public String admin(){
 
-        return "admin/login";
+        return "backend/login";
     }
 }

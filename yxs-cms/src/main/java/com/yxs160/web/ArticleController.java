@@ -10,19 +10,19 @@ public class ArticleController {
 
     @GetMapping(value = "/index")
     public String index(){
-        return "admin/article/list";
+        return "backend/article/list";
     }
 
     @GetMapping(value = "/type")
     public String typeIndex(){
-        return "admin/article/tags";
+        return "backend/article/tags";
     }
 
 
     @GetMapping(value = "/reply")
     public String replyIndex(){
 
-        return "admin/article/reply";
+        return "backend/article/reply";
     }
 
 }

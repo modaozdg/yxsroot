@@ -39,12 +39,17 @@ http://www.springframework.org/schema/aop http://www.springframework.org/schema/
     <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
         <property name="dataSource" ref="dataSource"/>
         <property name="mapperLocations" value="classpath:mybatis/mapper/*.xml"/>
+        <property name="configLocation" value="classpath:mybatis/mybatis-config.xml"/>
     </bean>
 
     <bean id="sessionTemplate" class="org.mybatis.spring.SqlSessionTemplate">
         <constructor-arg index="0" ref="sqlSessionFactory"/>
     </bean>
-
+    <!-- 自动扫描 -->
+    <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+        <property name="basePackage" value="com.yxs.backend.mapper"/>
+    </bean>
+    <!-- 事务 -->
     <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
         <property name="dataSource" ref="dataSource"/>
     </bean>
@@ -60,7 +65,7 @@ http://www.springframework.org/schema/aop http://www.springframework.org/schema/
     </tx:advice>
     
     <aop:config>
-        <aop:pointcut id="serviceOperation" expression="execution(* com.yxs160.service.impl.*.*(..))"/>
+        <aop:pointcut id="serviceOperation" expression="execution(* com.yxs.backend.service.impl.*.*(..))"/>
         <aop:advisor advice-ref="txAdvice" pointcut-ref="serviceOperation"/>
     </aop:config>
     
