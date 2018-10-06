@@ -52,26 +52,32 @@ layui.define(['table', 'form'], function(exports){
         ,btn: ['确定', '取消']
         ,yes: function(index, layero){
           var iframeWindow = window['layui-layer-iframe'+ index]
-          ,submit = layero.find('iframe').contents().find("#layuiadmin-app-form-edit");
+          ,submit = layero.find('iframe').contents().find("#article-edit");
 
           //监听提交
-          iframeWindow.layui.form.on('submit(layuiadmin-app-form-edit)', function(data){
+          iframeWindow.layui.form.on('submit(article-edit)', function(data){
             var field = data.field; //获取提交的字段
             
             //提交 Ajax 成功后，静态更新表格中的数据
-            //$.ajax({});              
-            obj.update({
-              label: field.label
-              ,title: field.title
-              ,author: field.author
-              ,status: field.status
-            }); //数据更新
+            //$.ajax({});
+            $.ajax({
+               url:'/article/save-edit'
+               ,type:'post'
+               ,data:data.field
+               ,success:function(res){
+                    obj.update({
+                        title: field.title
+                        ,source: field.source
+                    }); //数据更新
+                }
+            });
+
             
             form.render();
             layer.close(index); //关闭弹层
           });  
           
-          submit.trigger('click');
+          submit.click();
         }
       });
     }
